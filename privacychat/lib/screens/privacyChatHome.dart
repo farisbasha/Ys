@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:privacychat/constants.dart';
 import 'package:privacychat/screens/loginScreen.dart';
-import 'package:privacychat/screens/registrationScreen.dart';
+import 'package:privacychat/screens/UserController.dart';
 import 'package:privacychat/widgets/buttons.dart';
+import 'package:privacychat/widgets/regnAndLoginScreen.dart';
 
 class PrivacyChatHome extends StatelessWidget {
   static String id = "privacy_chat_home";
@@ -26,7 +27,12 @@ class PrivacyChatHome extends StatelessWidget {
               Buttons(
                 text: "Login",
                 onPressed: () {
-                  Navigator.pushNamed(context, LoginScreen.id);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => RegnAndLoginScreen(
+                                isLogin: true,
+                              )));
                 },
                 buttonColor: Color(0x80F5F26E),
               ),
@@ -36,7 +42,12 @@ class PrivacyChatHome extends StatelessWidget {
               Buttons(
                 text: "Register",
                 onPressed: () {
-                  Navigator.pushNamed(context, RegistrationScreen.id);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => RegnAndLoginScreen(
+                                isLogin: false,
+                              )));
                 },
                 buttonColor: Color(0x80F5F26E),
               )

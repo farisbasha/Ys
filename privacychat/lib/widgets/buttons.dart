@@ -9,9 +9,12 @@ class Buttons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(width: 300,
+    return Container(
+      width: 300,
       decoration: BoxDecoration(
-          color: buttonColor, borderRadius: BorderRadius.circular(10)),
+          color: buttonColor,
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(color: Colors.black12, width: 1)),
       child: TextButton(
           onPressed: onPressed,
           child: Text(text,
