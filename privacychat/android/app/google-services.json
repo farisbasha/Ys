@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "969014499075",
+    "project_id": "privacy-chat-150c6",
+    "storage_bucket": "privacy-chat-150c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969014499075:android:80aa2666d0de98d921fb36",
+        "android_client_info": {
+          "package_name": "com.yaseenkotta.privacychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969014499075-rjmsudqtn0bhvqnj31e1qgeojmg9mf4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_SugGY8sFYn_5-FUBnTyb2X_04WWRb94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969014499075-rjmsudqtn0bhvqnj31e1qgeojmg9mf4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
