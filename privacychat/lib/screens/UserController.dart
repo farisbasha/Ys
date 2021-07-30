@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 class UserController {
   static final _auth = FirebaseAuth.instance;
+
   static UserCredential user;
 
   static Future<void> newUser(String email, String password) async {
@@ -18,7 +19,7 @@ class UserController {
   }
 
   static Future<void> loginUser(String email, String password) async {
-    print(email);
+    print('login email $email');
     print(password);
     try {
       user = await _auth.signInWithEmailAndPassword(
