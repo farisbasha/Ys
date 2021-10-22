@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:privacychat/widgets/regnAndLoginScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class UserController {

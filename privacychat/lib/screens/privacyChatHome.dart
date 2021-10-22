@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:privacychat/constants.dart';
-import 'package:privacychat/screens/loginScreen.dart';
 import 'package:privacychat/screens/UserController.dart';
 import 'package:privacychat/widgets/buttons.dart';
 import 'package:privacychat/widgets/regnAndLoginScreen.dart';
