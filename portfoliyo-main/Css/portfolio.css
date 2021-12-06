@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Permanent+Marker&family=Redressed&family=Space+Mono&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+   
+}
+
+/* Common Styling start */
+
+[class*='container']{
+display: flex;
+flex-wrap:wrap;
+justify-content:space-evenly;
+align-items: center;
+height: 100vh;
+animation: topdown 1s 1;
+
+}
+[class$='item']{
+    margin:70px;
+    flex: 1;
+    justify-content:center;
+    text-align: center;
+    
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+h1,h3{
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.text-item{
+    height: 150px;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+}
+/* common styling end */
+
+
+
+/* header styling start */
+.header-container{
+
+box-shadow: 3px 3px 10px rgb(10, 10, 10);
+height: 100px;
+width: 100%;
+text-transform: capitalize;
+background-color: rgb(255, 255, 255);
+}
+
+
+.menu-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.menu-list ul li{
+padding: 15px;
+}
+
+.menu-list ul li a:hover{
+background-color: #9dcdbf;
+border-radius: 50px;
+
+
+}
+.header-container .btn a{
+    background-color:rgb(10, 10, 10);
+    color: #eeeeee;
+    padding: 9px 26px;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+.header-container .btn a:hover{
+
+    box-shadow: 3px 3px 30px #888888;
+}
+
+
+
+/* header styling end */
+
+
+/* home-container styling start */
+
+#first-line{
+    display: block;
+    font-size: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+#second-line{
+    display: block;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    color:#1ba100;
+   
+    
+}
+#third-line{
+    display: block;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    
+
+    
+    
+}
+#fourth-line{
+    display: block;
+    font-size: 20;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.img-item {
+    top: 69px;
+    position: relative;
+    border: 10px solid #1ba100;
+    box-sizing: border-box;
+    height: 600px;
+    background-color: black;
+}
+
+
+/* home-container styling end */
+
+/* skill-container styling START */
+
+h1#skills {
+    position: relative;
+    top: 55px;
+}
+.skill-container{
+   
+    margin:40px auto 0 auto;
+    height:225px;
+    text-size-adjust: 100px; 
+    background-color:#52e735;
+ }
+ 
+ .skill-container > .text-item:hover{
+    background-color: #9dcdbf;
+    transform: rotate(0deg);
+ }
+ .skill-container > .text-middleitem:hover{
+    background-color: #9dcdbf;
+    transform: scale(2)
+ }
+ 
+
+
+ /* skill-container styling  */
+
+/* contact container styling start */
+
+
+.contact-container{
+   
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: #52e735;
+}
+
+.card-item{
+background: #363636;
+padding: 0 20px;
+margin:0 10px;
+height: 200px;
+display: flex;
+flex-direction: column;
+color: #fff;
+cursor: pointer;
+
+}
+.card-item p{
+    opacity: 0;
+    }
+.card-item:hover{
+    background-color: #0077ff;
+}
+.card-item:hover p{
+opacity: 1;
+}
+.contact-container .card-item > i{
+    font-size: 28px;
+    margin-bottom: 12px;
+    
+   
+}
+
+/* Contact-container styling END */
+
+
+/* footer-container styling START */
+
+
+.footer-container{
+    height: 280px;
+    width: 100%;
+    background-color:black;
+}
+.footer-item{
+    padding: 0 20px;
+    margin:0 10px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color: rgb(12, 12, 12);
+    cursor: pointer;
+}
+a i{
+    font-size: 25px;
+    color: #fff;
+}
+a i:hover{
+box-shadow: 0px 1px 1px #fff;
+}
+
+/* footer-container styling END */
+
+/* Animations START */
+
+
+
+@keyframes topdown{
+    0% {
+     margin-top: -50px;
+     opacity: 0;
+    }
+   
+    100% {
+     
+      opacity:1;
+    }
+  }
+
+
+/* Animations END */
+
+
+
+
+/* Media queries START */
+@media (max-width:950px){
+    
+    .skill-container{
+        display: inline-block;
+        width:100%;
+        
+    }
+    
+    .skill-container > .text-item:hover{
+       transform: scale(0.8);
+     }
+     
+     .skill-container > .text-middleitem:hover{
+        transform: scale(0.8);
+      }
+     
+     .contact-container{
+         flex-direction: column;
+        
+     }
+     .contact-container .card-item{
+         width: 65%;
+         height: 190px;
+         margin: 10px;
+         
+     }
+
+}
+
+@media (max-width:650px){
+
+#first-line{
+
+    font-size: 20px;
+
+}
+#second-line{
+    font-size: 40px;
+}
+#third-line{
+    font-size: 15px;
+}
+.header-container .btn a{
+
+    font-size: 15px;
+    padding: 4px 15px;
+}
+.img-item{
+    position: relative;
+    top: 0px;
+    border: none;
+
+}
+.footer-container{
+    display: inline-block;
+}
+}
+
+@media (max-width:320px){
+    #first-line{
+
+        font-size: 18px;
+    
+    }
+    #second-line{
+        font-size: 28px;
+    }
+    #third-line{
+        font-size: 12px;
+    }
+
+    #skills{
+        position: relative;
+        top: 55px;
+    }
+    .img-item{
+        position: relative;
+        top: -6px;
+
+    }
+    
+
+}
+.education-container{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    
+    
+    
+    
+
+    
+    
+
+}
+.home-container{
+    background-color: rgb(19, 19, 19);
+   
+    
+}
+
+.contact-form{
+    width: 500px;
+    margin-left: 35%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0 #999;
+    position: absolute;
+    padding: 0px;
+
+    
+    
+    
+    
+    
+}
+form{
+    margin: 35px;
+    align-content: center;
+    
+
+
+}
+.input-failed{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+.textarea-failed{
+    height: 150px;
+    padding-top: 10px;
+
+}
+.btn{
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #47c35a;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+
+}
+/* Media queries END */
